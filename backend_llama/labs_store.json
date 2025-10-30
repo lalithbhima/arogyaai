@@ -1,0 +1,182 @@
+[
+  {
+    "ts": 1761403732,
+    "iso": "2025-10-25T14:48:52.567072Z",
+    "raw": "CBC:\n  Hemoglobin: 13.2 g/dL (Normal 13\u201317)\n  WBC: 8,500 /\u00b5L (Normal 4,000\u201310,000)\n  Platelets: 250,000 /\u00b5L (Normal 150,000\u2013450,000)\nLipid Panel:\n  Total Cholesterol: 220 mg/dL (Normal <200)\n  LDL: 145 mg/dL (Normal <130)\n  HDL: 40 mg/dL (Normal >40)\n  Triglycerides: 175 mg/dL (Normal <150)\nFasting Blood Sugar: 96 mg/dL (Normal 70\u201399)",
+    "markers": {
+      "LDL": 145.0,
+      "HDL": 40.0,
+      "Hemoglobin": 13.2
+    }
+  },
+  {
+    "ts": 1761404220,
+    "iso": "2025-10-25T14:57:00.221616Z",
+    "raw": "CBC:\n  Hemoglobin: 13.2 g/dL (Normal 13\u201317)\n  WBC: 8,500 /\u00b5L (Normal 4,000\u201310,000)\n  Platelets: 250,000 /\u00b5L (Normal 150,000\u2013450,000)\nLipid Panel:\n  Total Cholesterol: 220 mg/dL (Normal <200)\n  LDL: 145 mg/dL (Normal <130)\n  HDL: 40 mg/dL (Normal >40)\n  Triglycerides: 175 mg/dL (Normal <150)\nFasting Blood Sugar: 96 mg/dL (Normal 70\u201399)",
+    "markers": {
+      "LDL": 145.0,
+      "HDL": 40.0,
+      "Hemoglobin": 13.2
+    }
+  },
+  {
+    "ts": 1761404231,
+    "iso": "2025-10-25T14:57:11.698293Z",
+    "raw": "CBC:\n  Hemoglobin: 13.2 g/dL (Normal 13\u201317)\n  WBC: 8,500 /\u00b5L (Normal 4,000\u201310,000)\n  Platelets: 250,000 /\u00b5L (Normal 150,000\u2013450,000)\nLipid Panel:\n  Total Cholesterol: 220 mg/dL (Normal <200)\n  LDL: 145 mg/dL (Normal <130)\n  HDL: 40 mg/dL (Normal >40)\n  Triglycerides: 175 mg/dL (Normal <150)\nFasting Blood Sugar: 96 mg/dL (Normal 70\u201399)",
+    "markers": {
+      "LDL": 145.0,
+      "HDL": 40.0,
+      "Hemoglobin": 13.2
+    }
+  },
+  {
+    "ts": 1761404284,
+    "iso": "2025-10-25T14:58:04.011307Z",
+    "raw": "CBC:\n  Hemoglobin: 13.2 g/dL (Normal 13\u201317)\n  WBC: 8,500 /\u00b5L (Normal 4,000\u201310,000)\n  Platelets: 250,000 /\u00b5L (Normal 150,000\u2013450,000)\nLipid Panel:\n  Total Cholesterol: 220 mg/dL (Normal <200)\n  LDL: 145 mg/dL (Normal <130)\n  HDL: 40 mg/dL (Normal >40)\n  Triglycerides: 175 mg/dL (Normal <150)\nFasting Blood Sugar: 96 mg/dL (Normal 70\u201399)",
+    "markers": {
+      "LDL": 145.0,
+      "HDL": 40.0,
+      "Hemoglobin": 13.2
+    }
+  },
+  {
+    "ts": 1761404932,
+    "iso": "2025-10-25T15:08:52.404798Z",
+    "raw": "CBC:\n  Hemoglobin: 13.2 g/dL (Normal 13\u201317)\n  WBC: 8,500 /\u00b5L (Normal 4,000\u201310,000)\n  Platelets: 250,000 /\u00b5L (Normal 150,000\u2013450,000)\nLipid Panel:\n  Total Cholesterol: 220 mg/dL (Normal <200)\n  LDL: 145 mg/dL (Normal <130)\n  HDL: 40 mg/dL (Normal >40)\n  Triglycerides: 175 mg/dL (Normal <150)\nFasting Blood Sugar: 96 mg/dL (Normal 70\u201399)",
+    "markers": {
+      "LDL": 145.0,
+      "HDL": 40.0,
+      "Hemoglobin": 13.2
+    }
+  },
+  {
+    "ts": 1761404968,
+    "iso": "2025-10-25T15:09:28.384367Z",
+    "raw": "CBC:\n  Hemoglobin: 13.2 g/dL (Normal 13\u201317)\n  WBC: 8,500 /\u00b5L (Normal 4,000\u201310,000)\n  Platelets: 250,000 /\u00b5L (Normal 150,000\u2013450,000)\nLipid Panel:\n  Total Cholesterol: 220 mg/dL (Normal <200)\n  LDL: 145 mg/dL (Normal <130)\n  HDL: 40 mg/dL (Normal >40)\n  Triglycerides: 175 mg/dL (Normal <150)\nFasting Blood Sugar: 96 mg/dL (Normal 70\u201399)",
+    "markers": {
+      "LDL": 145.0,
+      "HDL": 40.0,
+      "Hemoglobin": 13.2
+    }
+  },
+  {
+    "ts": 1761405094,
+    "iso": "2025-10-25T15:11:34.676891Z",
+    "raw": "CBC:\n  Hemoglobin: 13.2 g/dL (Normal 13\u201317)\n  WBC: 8,500 /\u00b5L (Normal 4,000\u201310,000)\n  Platelets: 250,000 /\u00b5L (Normal 150,000\u2013450,000)\nLipid Panel:\n  Total Cholesterol: 220 mg/dL (Normal <200)\n  LDL: 145 mg/dL (Normal <130)\n  HDL: 40 mg/dL (Normal >40)\n  Triglycerides: 175 mg/dL (Normal <150)\nFasting Blood Sugar: 96 mg/dL (Normal 70\u201399)",
+    "markers": {
+      "LDL": 145.0,
+      "HDL": 40.0,
+      "Hemoglobin": 13.2
+    }
+  },
+  {
+    "ts": 1761405134,
+    "iso": "2025-10-25T15:12:14.368029Z",
+    "raw": "CBC:\n  Hemoglobin: 13.2 g/dL (Normal 13\u201317)\n  WBC: 8,500 /\u00b5L (Normal 4,000\u201310,000)\n  Platelets: 250,000 /\u00b5L (Normal 150,000\u2013450,000)\nLipid Panel:\n  Total Cholesterol: 220 mg/dL (Normal <200)\n  LDL: 145 mg/dL (Normal <130)\n  HDL: 40 mg/dL (Normal >40)\n  Triglycerides: 175 mg/dL (Normal <150)\nFasting Blood Sugar: 96 mg/dL (Normal 70\u201399)",
+    "markers": {
+      "LDL": 145.0,
+      "HDL": 40.0,
+      "Hemoglobin": 13.2
+    }
+  },
+  {
+    "ts": 1761405346,
+    "iso": "2025-10-25T15:15:46.334909Z",
+    "raw": "CBC:\n  Hemoglobin: 13.2 g/dL (Normal 13\u201317)\n  WBC: 8,500 /\u00b5L (Normal 4,000\u201310,000)\n  Platelets: 250,000 /\u00b5L (Normal 150,000\u2013450,000)\nLipid Panel:\n  Total Cholesterol: 220 mg/dL (Normal <200)\n  LDL: 145 mg/dL (Normal <130)\n  HDL: 40 mg/dL (Normal >40)\n  Triglycerides: 175 mg/dL (Normal <150)\nFasting Blood Sugar: 96 mg/dL (Normal 70\u201399)",
+    "markers": {
+      "LDL": 145.0,
+      "HDL": 40.0,
+      "Hemoglobin": 13.2
+    }
+  },
+  {
+    "ts": 1761405379,
+    "iso": "2025-10-25T15:16:19.313697Z",
+    "raw": "CBC:\n  Hemoglobin: 13.2 g/dL (Normal 13\u201317)\n  WBC: 8,500 /\u00b5L (Normal 4,000\u201310,000)\n  Platelets: 250,000 /\u00b5L (Normal 150,000\u2013450,000)\nLipid Panel:\n  Total Cholesterol: 220 mg/dL (Normal <200)\n  LDL: 145 mg/dL (Normal <130)\n  HDL: 40 mg/dL (Normal >40)\n  Triglycerides: 175 mg/dL (Normal <150)\nFasting Blood Sugar: 96 mg/dL (Normal 70\u201399)",
+    "markers": {
+      "LDL": 145.0,
+      "HDL": 40.0,
+      "Hemoglobin": 13.2
+    }
+  },
+  {
+    "ts": 1761405548,
+    "iso": "2025-10-25T15:19:08.801431Z",
+    "raw": "CBC:\n  Hemoglobin: 13.2 g/dL (Normal 13\u201317)\n  WBC: 8,500 /\u00b5L (Normal 4,000\u201310,000)\n  Platelets: 250,000 /\u00b5L (Normal 150,000\u2013450,000)\nLipid Panel:\n  Total Cholesterol: 220 mg/dL (Normal <200)\n  LDL: 145 mg/dL (Normal <130)\n  HDL: 40 mg/dL (Normal >40)\n  Triglycerides: 175 mg/dL (Normal <150)\nFasting Blood Sugar: 96 mg/dL (Normal 70\u201399)",
+    "markers": {
+      "LDL": 145.0,
+      "HDL": 40.0,
+      "Hemoglobin": 13.2
+    }
+  },
+  {
+    "ts": 1761405690,
+    "iso": "2025-10-25T15:21:30.223898Z",
+    "raw": "CBC:\n  Hemoglobin: 13.2 g/dL (Normal 13\u201317)\n  WBC: 8,500 /\u00b5L (Normal 4,000\u201310,000)\n  Platelets: 250,000 /\u00b5L (Normal 150,000\u2013450,000)\nLipid Panel:\n  Total Cholesterol: 220 mg/dL (Normal <200)\n  LDL: 145 mg/dL (Normal <130)\n  HDL: 40 mg/dL (Normal >40)\n  Triglycerides: 175 mg/dL (Normal <150)\nFasting Blood Sugar: 96 mg/dL (Normal 70\u201399)",
+    "markers": {
+      "LDL": 145.0,
+      "HDL": 40.0,
+      "Hemoglobin": 13.2
+    }
+  },
+  {
+    "ts": 1761407746,
+    "iso": "2025-10-25T15:55:46.068392Z",
+    "raw": "CBC:\n  Hemoglobin: 13.2 g/dL (Normal 13\u201317)\n  WBC: 8,500 /\u00b5L (Normal 4,000\u201310,000)\n  Platelets: 250,000 /\u00b5L (Normal 150,000\u2013450,000)\nLipid Panel:\n  Total Cholesterol: 220 mg/dL (Normal <200)\n  LDL: 145 mg/dL (Normal <130)\n  HDL: 40 mg/dL (Normal >40)\n  Triglycerides: 175 mg/dL (Normal <150)\nFasting Blood Sugar: 96 mg/dL (Normal 70\u201399)",
+    "markers": {
+      "LDL": 145.0,
+      "HDL": 40.0,
+      "Hemoglobin": 13.2
+    }
+  },
+  {
+    "ts": 1761407789,
+    "iso": "2025-10-25T15:56:29.036952Z",
+    "raw": "CBC:\n  Hemoglobin: 13.2 g/dL (Normal 13\u201317)\n  WBC: 8,500 /\u00b5L (Normal 4,000\u201310,000)\n  Platelets: 250,000 /\u00b5L (Normal 150,000\u2013450,000)\nLipid Panel:\n  Total Cholesterol: 220 mg/dL (Normal <200)\n  LDL: 145 mg/dL (Normal <130)\n  HDL: 40 mg/dL (Normal >40)\n  Triglycerides: 175 mg/dL (Normal <150)\nFasting Blood Sugar: 96 mg/dL (Normal 70\u201399)",
+    "markers": {
+      "LDL": 145.0,
+      "HDL": 40.0,
+      "Hemoglobin": 13.2
+    }
+  },
+  {
+    "ts": 1761515454,
+    "iso": "2025-10-26T21:50:54.998447Z",
+    "raw": "CBC:\n  Hemoglobin: 13.2 g/dL (Normal 13\u201317)\n  WBC: 8,500 /\u00b5L (Normal 4,000\u201310,000)\n  Platelets: 250,000 /\u00b5L (Normal 150,000\u2013450,000)\nLipid Panel:\n  Total Cholesterol: 220 mg/dL (Normal <200)\n  LDL: 145 mg/dL (Normal <130)\n  HDL: 40 mg/dL (Normal >40)\n  Triglycerides: 175 mg/dL (Normal <150)\nFasting Blood Sugar: 96 mg/dL (Normal 70\u201399)",
+    "markers": {
+      "LDL": 145.0,
+      "HDL": 40.0,
+      "Hemoglobin": 13.2
+    }
+  },
+  {
+    "ts": 1761515498,
+    "iso": "2025-10-26T21:51:38.686249Z",
+    "raw": "CBC:\n  Hemoglobin: 13.2 g/dL (Normal 13\u201317)\n  WBC: 8,500 /\u00b5L (Normal 4,000\u201310,000)\n  Platelets: 250,000 /\u00b5L (Normal 150,000\u2013450,000)\nLipid Panel:\n  Total Cholesterol: 220 mg/dL (Normal <200)\n  LDL: 145 mg/dL (Normal <130)\n  HDL: 40 mg/dL (Normal >40)\n  Triglycerides: 175 mg/dL (Normal <150)\nFasting Blood Sugar: 96 mg/dL (Normal 70\u201399)",
+    "markers": {
+      "LDL": 145.0,
+      "HDL": 40.0,
+      "Hemoglobin": 13.2
+    }
+  },
+  {
+    "ts": 1761523254,
+    "iso": "2025-10-27T00:00:54.719248Z",
+    "raw": "CBC:\n  Hemoglobin: 13.2 g/dL (Normal 13\u201317)\n  WBC: 8,500 /\u00b5L (Normal 4,000\u201310,000)\n  Platelets: 250,000 /\u00b5L (Normal 150,000\u2013450,000)\nLipid Panel:\n  Total Cholesterol: 220 mg/dL (Normal <200)\n  LDL: 145 mg/dL (Normal <130)\n  HDL: 40 mg/dL (Normal >40)\n  Triglycerides: 175 mg/dL (Normal <150)\nFasting Blood Sugar: 96 mg/dL (Normal 70\u201399)",
+    "markers": {
+      "LDL": 145.0,
+      "HDL": 40.0,
+      "Hemoglobin": 13.2
+    }
+  },
+  {
+    "ts": 1761523299,
+    "iso": "2025-10-27T00:01:39.731840Z",
+    "raw": "CBC:\n  Hemoglobin: 13.2 g/dL (Normal 13\u201317)\n  WBC: 8,500 /\u00b5L (Normal 4,000\u201310,000)\n  Platelets: 250,000 /\u00b5L (Normal 150,000\u2013450,000)\nLipid Panel:\n  Total Cholesterol: 220 mg/dL (Normal <200)\n  LDL: 145 mg/dL (Normal <130)\n  HDL: 40 mg/dL (Normal >40)\n  Triglycerides: 175 mg/dL (Normal <150)\nFasting Blood Sugar: 96 mg/dL (Normal 70\u201399)",
+    "markers": {
+      "LDL": 145.0,
+      "HDL": 40.0,
+      "Hemoglobin": 13.2
+    }
+  }
+]

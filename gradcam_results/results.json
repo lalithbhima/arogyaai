@@ -1,0 +1,102 @@
+[
+  {
+    "original": "ISIC_0033272.jpg",
+    "topk": [
+      {
+        "label": "mel",
+        "prob": 0.9509690403938293,
+        "gradcam": "ISIC_0033272.jpg_top1_mel.jpg"
+      },
+      {
+        "label": "bkl",
+        "prob": 0.04323653131723404,
+        "gradcam": "ISIC_0033272.jpg_top2_bkl.jpg"
+      },
+      {
+        "label": "akiec",
+        "prob": 0.005245947744697332,
+        "gradcam": "ISIC_0033272.jpg_top3_akiec.jpg"
+      }
+    ]
+  },
+  {
+    "original": "ISIC_0031923.jpg",
+    "topk": [
+      {
+        "label": "nv",
+        "prob": 0.9996781349182129,
+        "gradcam": "ISIC_0031923.jpg_top1_nv.jpg"
+      },
+      {
+        "label": "bkl",
+        "prob": 0.00013596269127447158,
+        "gradcam": "ISIC_0031923.jpg_top2_bkl.jpg"
+      },
+      {
+        "label": "mel",
+        "prob": 0.00010807797661982477,
+        "gradcam": "ISIC_0031923.jpg_top3_mel.jpg"
+      }
+    ]
+  },
+  {
+    "original": "ISIC_0026652.jpg",
+    "topk": [
+      {
+        "label": "mel",
+        "prob": 0.9733303785324097,
+        "gradcam": "ISIC_0026652.jpg_top1_mel.jpg"
+      },
+      {
+        "label": "akiec",
+        "prob": 0.022782329469919205,
+        "gradcam": "ISIC_0026652.jpg_top2_akiec.jpg"
+      },
+      {
+        "label": "bkl",
+        "prob": 0.002989686792716384,
+        "gradcam": "ISIC_0026652.jpg_top3_bkl.jpg"
+      }
+    ]
+  },
+  {
+    "original": "ISIC_0030583.jpg",
+    "topk": [
+      {
+        "label": "bkl",
+        "prob": 0.9911084175109863,
+        "gradcam": "ISIC_0030583.jpg_top1_bkl.jpg"
+      },
+      {
+        "label": "nv",
+        "prob": 0.008071239106357098,
+        "gradcam": "ISIC_0030583.jpg_top2_nv.jpg"
+      },
+      {
+        "label": "mel",
+        "prob": 0.0004061511717736721,
+        "gradcam": "ISIC_0030583.jpg_top3_mel.jpg"
+      }
+    ]
+  },
+  {
+    "original": "ISIC_0034010.jpg",
+    "topk": [
+      {
+        "label": "nv",
+        "prob": 0.9889208078384399,
+        "gradcam": "ISIC_0034010.jpg_top1_nv.jpg"
+      },
+      {
+        "label": "mel",
+        "prob": 0.010126403532922268,
+        "gradcam": "ISIC_0034010.jpg_top2_mel.jpg"
+      },
+      {
+        "label": "bcc",
+        "prob": 0.0003878068528138101,
+        "gradcam": "ISIC_0034010.jpg_top3_bcc.jpg"
+      }
+    ]
+  }
+]
