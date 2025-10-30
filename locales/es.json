@@ -1,0 +1,53 @@
+{
+  "app_name": "ArogyaAI",
+  "welcome_screen": {
+    "tagline": "Tu salud, reimaginada",
+    "logo_accessibility_label": "Logo de ArogyaAI",
+    "languages": {
+      "en": "Inglés",
+      "es": "Español",
+      "te": "తెలుగు"
+    }
+  },
+  "onboarding": {
+    "get_started": "Comenzar"
+  },
+  "app_name": "ArogyaAI",
+  "common": {
+    "cancel": "Cancelar",
+    "unknown_error": "Error desconocido"
+  },
+  "auth": {
+    "no_biometric_hardware": "No se encontró hardware biométrico",
+    "prompt_message": "Inicia sesión con Face ID / Touch ID / biometría",
+    "no_stored_credentials_title": "No se encontraron credenciales guardadas",
+    "no_stored_credentials_body": "Por favor, inicia sesión manualmente primero.",
+    "biometric_failed": "La autenticación biométrica falló",
+    "login_failed": "Error al iniciar sesión",
+    "signup_failed": "Error al registrarse",
+    "welcome_title": "¡Bienvenido!",
+    "welcome_body": "Vamos a personalizar tu perfil de ArogyaAI.",
+    "welcome_back": "¡Bienvenido de nuevo!",
+    "create_account": "Crea tu cuenta",
+    "email_placeholder": "Correo electrónico",
+    "password_placeholder": "Contraseña",
+    "login_button": "Iniciar sesión",
+    "signup_button": "Registrarse",
+    "login_with_faceid": "Iniciar sesión con Face ID",
+    "switch_to_signup": "¿No tienes una cuenta? Regístrate",
+    "switch_to_login": "¿Ya tienes una cuenta? Inicia sesión"
+  },
+  "privacy": {
+    "header": "Privacidad y seguridad de datos",
+    "hero_title": "Tus datos de salud son tuyos",
+    "hero_text": "ArogyaAI sigue estándares internacionales como GDPR y HIPAA para asegurar que tu información de salud permanezca privada, encriptada y bajo tu control.",
+    "encryption_title": "Encriptación y almacenamiento",
+    "encryption_text": "• Todos los datos están encriptados en reposo y en tránsito.\n• Sin análisis de terceros — ArogyaAI nunca vende ni comparte tus datos.\n• El modo de almacenamiento local garantiza que tus datos permanezcan en el dispositivo.",
+    "consent_title": "Controles de consentimiento",
+    "consent_text": "Administra lo que ArogyaAI puede analizar en Configuración → Centro de privacidad. Activa/desactiva módulos de IA y elimina registros en cualquier momento.",
+    "transparency_title": "Transparencia",
+    "transparency_text": "Cada sugerencia de IA incluye el razonamiento del “por qué” y un registro de auditoría rastreable para que puedas ver exactamente cómo se formaron las recomendaciones.",
+    "tips_title": "Consejos rápidos",
+    "tips_text": "🔐 Revisa tu configuración de privacidad mensualmente.\n📄 Exporta tus datos en cualquier momento para consultas médicas.\n🧭 Revisa el “Centro de ética” en Más funciones para conocer la Carta ética de ArogyaAI."
+  }
+}
