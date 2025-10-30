@@ -1,0 +1,63 @@
+{
+  "name": "ReactNativeGetLocation",
+  "version": "6.0.0",
+  "description": "⚛ Simple to use React Native library to get device location for Android and iOS.",
+  "homepage": "https://github.com/douglasjunior/react-native-get-location",
+  "summary": "⚛ Simple to use React Native library to get device location for Android and iOS.",
+  "license": "MIT",
+  "authors": {
+    "name": "Douglas Nassif Roma Junior",
+    "email": "nassifrroma@gmail.com",
+    "url": "http://douglasjunior.me"
+  },
+  "source": {
+    "git": "https://github.com/douglasjunior/react-native-get-location.git",
+    "tag": "6.0.0"
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "preserve_paths": [
+    "README.md",
+    "package.json",
+    "*.js"
+  ],
+  "source_files": "ios/ReactNativeGetLocationLibrary/**/*.{h,m,mm,swift}",
+  "compiler_flags": "-DRCT_NEW_ARCH_ENABLED=1",
+  "dependencies": {
+    "React-Core": [],
+    "React-RCTFabric": [],
+    "ReactCodegen": [],
+    "RCTRequired": [],
+    "RCTTypeSafety": [],
+    "ReactCommon/turbomodule/bridging": [],
+    "ReactCommon/turbomodule/core": [],
+    "React-NativeModulesApple": [],
+    "Yoga": [],
+    "React-Fabric": [],
+    "React-graphics": [],
+    "React-utils": [],
+    "React-featureflags": [],
+    "React-debug": [],
+    "React-ImageManager": [],
+    "React-rendererdebug": [],
+    "React-jsi": [],
+    "React-renderercss": [],
+    "hermes-engine": [],
+    "React-hermes": [],
+    "glog": [],
+    "boost": [],
+    "DoubleConversion": [],
+    "fast_float": [],
+    "fmt": [],
+    "RCT-Folly": [],
+    "SocketRocket": [],
+    "RCT-Folly/Fabric": []
+  },
+  "pod_target_xcconfig": {
+    "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/Headers/Private/Yoga\"",
+    "CLANG_CXX_LANGUAGE_STANDARD": "c++20",
+    "OTHER_CPLUSPLUSFLAGS": "$(inherited) -DRCT_NEW_ARCH_ENABLED=1 ",
+    "OTHER_SWIFT_FLAGS": "$(inherited) -DRCT_NEW_ARCH_ENABLED"
+  }
+}
