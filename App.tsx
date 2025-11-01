@@ -123,19 +123,36 @@ function MainTabs() {
 
 export default function App(): JSX.Element {
   const [isReady, setIsReady] = useState(false);
+  console.log("[ArogyaAI] App component mounted");
 
   useEffect(() => {
+    console.log("[ArogyaAI] useEffect init starting");
+
     async function init() {
       try {
+        console.log("[ArogyaAI] reading userLang from AsyncStorage...");
         const userLang = await AsyncStorage.getItem("userLang");
-        setI18nConfig(userLang);
-      } catch {
-        setI18nConfig();
+        console.log("[ArogyaAI] AsyncStorage result =", userLang);
+
+        // Guard the i18n call in case setI18nConfig is undefined
+        if (typeof setI18nConfig === "function") {
+          setI18nConfig(userLang);
+          console.log("[ArogyaAI] setI18nConfig called successfully");
+        } else {
+          console.log("[ArogyaAI] setI18nConfig is undefined, skipping");
+        }
+      } catch (e) {
+        console.log("[ArogyaAI] init() error:", e);
+      } finally {
+        console.log("[ArogyaAI] setting isReady = true");
+        setIsReady(true);
       }
-      setIsReady(true);
     }
+
     init();
   }, []);
+
+  console.log("[ArogyaAI] isReady =", isReady);
 
   if (!isReady) {
     return (
@@ -151,6 +168,7 @@ export default function App(): JSX.Element {
       </View>
     );
   }
+  console.log("[ArogyaAI] Navigation rendering now");
 
   return (
     <PaperProvider>

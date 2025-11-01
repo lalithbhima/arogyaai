@@ -15,14 +15,7 @@ import {
 } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
 import Ionicons from "react-native-vector-icons/Ionicons";
-import {
-  LineChart,
-  Grid,
-  XAxis,
-  YAxis,
-} from "react-native-svg-charts";
-import { Defs, LinearGradient as SvgGrad, Stop, Circle, G, Line, Text as SvgText } from "react-native-svg";
-import * as shape from "d3-shape";
+  import { LineChart } from "react-native-chart-kit";
 
 export default function LabsScreen({ navigation }: any): JSX.Element {
   const [input, setInput] = useState("");
@@ -80,104 +73,46 @@ export default function LabsScreen({ navigation }: any): JSX.Element {
   };
 
   // ---- Line Chart Component ----
-    // ---- Line Chart Component (centered user value) ----
-    const TrendChart = ({ title, data, color }: any) => {
+  // ---- Trend Chart Component (react-native-chart-kit) ----
+  const TrendChart = ({ title, data, color }: any) => {
     if (!data || !data.length) return null;
 
-    // --- compute values and labels ---
     const values = data.map((d: any) => d.v);
-    const lastIndex = Math.floor(values.length / 2); // center index
-    const labels = data.map((_, i: number) => {
-        const offset = i - lastIndex;
-        return offset === 0 ? "Now" : offset > 0 ? `+${offset}` : `${offset}`;
-    });
-
+    const labels = data.map((_, i: number) => (i === data.length - 1 ? "Now" : `${i}`));
     const avg = values.reduce((a, b) => a + b, 0) / values.length;
-    const current = values[lastIndex];
+    const current = values[values.length - 1];
     const riskColor =
-        current > avg * 1.2 ? "#ef4444" : current < avg * 0.8 ? "#22b497" : "#facc15";
-
-    const Decorator = ({ x, y, data }: any) => (
-        <G>
-        {data.map((value: number, index: number) => (
-            <Circle
-            key={index}
-            cx={x(index)}
-            cy={y(value)}
-            r={index === lastIndex ? 5 : 3}
-            stroke={index === lastIndex ? "#000" : color}
-            fill={index === lastIndex ? "#fff" : color}
-            strokeWidth={index === lastIndex ? 2 : 1.5}
-            />
-        ))}
-        </G>
-    );
-
-    const Tooltip = ({ x, y, data }: any) => (
-        <G x={x(lastIndex)} y={y(data[lastIndex])}>
-        <Line y1={0} y2={150} stroke={riskColor} strokeDasharray={[4, 4]} />
-        <SvgText
-            x={-25}
-            y={-10}
-            fontSize="12"
-            fill={riskColor}
-            fontWeight="600"
-        >
-            {data[lastIndex].toFixed(1)}
-        </SvgText>
-        </G>
-    );
-
-    const Gradient = () => (
-        <Defs key="gradient">
-        <SvgGrad id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
-            <Stop offset="0%" stopColor={color} stopOpacity={0.3} />
-            <Stop offset="100%" stopColor="#ffffff" stopOpacity={0.1} />
-        </SvgGrad>
-        </Defs>
-    );
+      current > avg * 1.2 ? "#ef4444" : current < avg * 0.8 ? "#22b497" : "#facc15";
 
     return (
-        <View style={s.chartContainer}>
+      <View style={s.chartContainer}>
         <Text style={s.chartTitle}>{title}</Text>
-        <View style={{ flexDirection: "row", height: 200 }}>
-            <YAxis
-            data={values}
-            contentInset={{ top: 20, bottom: 20 }}
-            svg={{ fontSize: 10, fill: "#678", fontWeight: "500" }}
-            />
-            <View style={{ flex: 1, marginLeft: 10 }}>
-            <LineChart
-                style={{ flex: 1 }}
-                data={values}
-                svg={{ stroke: color, strokeWidth: 3, fill: "url(#grad)" }}
-                contentInset={{ top: 20, bottom: 20 }}
-                curve={shape.curveBasis}
-                animate
-                animationDuration={800}
-            >
-                <Gradient />
-                <Grid svg={{ strokeDasharray: [3, 3], stroke: "#dde9f5" }} />
-                <Decorator />
-                <Tooltip />
-            </LineChart>
-            <XAxis
-                style={{ marginHorizontal: -10, marginTop: 5 }}
-                data={labels}
-                formatLabel={(v) => labels[v]}
-                contentInset={{ left: 15, right: 15 }}
-                svg={{ fontSize: 10, fill: "#789", fontWeight: "500" }}
-            />
-            </View>
-        </View>
+        <LineChart
+          data={{
+            labels,
+            datasets: [{ data: values, color: () => color }],
+          }}
+          width={Dimensions.get("window").width - 70}
+          height={220}
+          chartConfig={{
+            backgroundGradientFrom: "#ffffff",
+            backgroundGradientTo: "#f8fbff",
+            color: () => color,
+            labelColor: () => "#678",
+            strokeWidth: 3,
+            decimalPlaces: 1,
+          }}
+          bezier
+          style={{ borderRadius: 16 }}
+        />
         <Text style={s.chartInsight}>
-            {`Current: ${current.toFixed(1)} | Avg: ${avg.toFixed(1)} → ${
+          {`Current: ${current.toFixed(1)} | Avg: ${avg.toFixed(1)} → ${
             current > avg ? "↑ Improving" : "↓ Slight decline"
-            }`}
+          }`}
         </Text>
-        </View>
+      </View>
     );
-    };
+  };
 
   const renderCharts = () => {
     if (!series || Object.keys(series).length === 0) return null;
