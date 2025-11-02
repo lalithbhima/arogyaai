@@ -1,97 +1,204 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 🌿 ArogyaAI — Intelligent Health Companion App
 
-# Getting Started
+ArogyaAI is a multilingual, AI-powered mobile health assistant designed to make preventive care, diagnostics, and health education accessible for everyone. Built with **React Native + Expo**, it empowers users to manage their wellness, understand symptoms, schedule reminders, and access ethical, family-centric, and global health resources — all in one app.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## 🧠 Overview
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+ArogyaAI provides personalized, research-backed health guidance using intelligent tools that combine **AI**, **image enhancement**, and **data-driven insights**.  
+The app was created for the **Congressional App Challenge (CAC)** to demonstrate how AI can bring equitable healthcare access to underserved communities.
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+---
 
-```sh
-# Using npm
-npm start
+## ✨ Key Features
 
-# OR using Yarn
-yarn start
+### 🩺 Core Health Tools
+- **Symptom Checker Chat** – Interactive AI assistant that adapts questions dynamically to guide users to the right care path.  
+- **Imaging AI** – Upload X-rays or skin images; the app enhances low-resolution scans and generates detailed heatmaps.  
+- **Immune Risk Screen** – Uses a CNN-based classifier to analyze risk factors and generate visual results.  
+- **Health Passport** – Digital record of conditions, immunizations, and doctor visits.
+
+### 🗓️ Daily Life & Care
+- **Reminders & Scheduler** – Set medication, appointment, and wellness reminders with smart notifications.  
+- **Calendar Integration** – View all health events and reminders in one timeline.  
+- **Chronic Care Tracker** – Track blood pressure, sugar, mood, and more over time.
+
+### 🌍 Education & Community
+- **ArogyaAI Academy** – Learn about preventive health and chronic care through interactive lessons.  
+- **Global Health Mode** – Real-time updates on outbreaks, vaccines, and WHO advisories.  
+- **Ethics & Family Mode** – Access ethical guidelines, family sharing options, and emergency contacts.
+
+---
+
+## 📱 Screens Structure
+
+```bash
+screens/
+├── core/
+│ ├── AddMemberScreen.tsx
+│ ├── ArogyaAIChat.tsx
+│ ├── AssistantScreen.tsx
+│ ├── AssistantSummary.tsx
+│ ├── CalendarScreen.tsx
+│ ├── HealthAssistantScreen.tsx
+│ ├── HomeScreen.tsx
+│ ├── ImagingScreen.tsx
+│ ├── LabsScreen.tsx
+│ ├── MoreFeaturesScreen.tsx
+│ ├── OnboardingScreen.tsx
+│ ├── PassportProfile.tsx
+│ ├── PassportScreen.tsx
+│ ├── ProfileDetailScreen.tsx
+│ ├── SettingScreen.tsx
+│ ├── SettingsDetailScreen.tsx
+│ └── SkinCancerScreen.tsx
+│
+├── modules/
+│ ├── AllergyScreen.tsx
+│ ├── EthicsDetailScreen.tsx
+│ ├── EthicsScreen.tsx
+│ ├── FitnessScreen.tsx
+│ ├── GlobalHealthScreen.tsx
+│ ├── HealthNewsScreen.tsx
+│ ├── MentalHealthScreen.tsx
+│ ├── NutritionScreen.tsx
+│ ├── PediatricScreen.tsx
+│ ├── RecordImportScreen.tsx
+│ ├── SleepScreen.tsx
+│ ├── SupportScreen.tsx
+│ ├── TutorialGlobalScreen.tsx
+│ ├── TutorialHomeScreen.tsx
+│ ├── TutorialLabsScreen.tsx
+│ └── TutorialPrivacyScreen.tsx
+│
+├── onboarding/
+│ ├── AuthScreen.tsx
+│ ├── LanguagePickerScreen.tsx
+│ └── WelcomeScreen.tsx
+│
+├── types/
+├── utils/
+└── vendor/
+
 ```
 
-## Step 2: Build and run your app
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+Each screen represents a functional module (AI chat, education, imaging, or wellness) under a clean, scalable architecture.
 
-### Android
+---
 
-```sh
-# Using npm
-npm run android
+## 🧩 Tech Stack
 
-# OR using Yarn
-yarn android
+| Category | Technology |
+|-----------|-------------|
+| Framework | **React Native (Expo)** |
+| Backend AI | **Python + Flask + TensorFlow/PyTorch (CNN)** |
+| Styling & UI | **Tailwind + shadcn/ui + LinearGradient + Lottie Animations** |
+| State & Navigation | **@react-navigation (stack / tabs)** |
+| Image Processing | **react-native-image-picker**, **react-native-fs**, **react-native-share** |
+| Data Storage | **AsyncStorage**, optional SQLite |
+| Localization | **i18n-js** (multi-language support) |
+| Dev Tools | **TypeScript**, **ESLint**, **Prettier**, **Jest** |
+| Deployment | **Expo (iOS / Android)** |
+
+---
+
+## 🧪 AI & ML Integration
+
+ArogyaAI’s backend integrates trained convolutional neural networks (CNNs) to analyze medical images.
+
+**Backend files:**
+- `gradcam.py`, `batch_gradcam.py` — Grad-CAM visualization pipeline  
+- `test.py` — quick inference script  
+- `HAM10000_metadata.csv` — benchmark dataset reference  
+- `loss_curve.png`, `gradcam_result.jpg` — model results  
+
+**Endpoints (Flask):**
+- `/predict` — returns classification + confidence  
+- `/enhance` — improves image clarity  
+- `/heatmap` — overlays Grad-CAM visualization  
+
+Frontend communicates via REST (`axios`) through `API_BASE` in `ImagingScreen.tsx`.
+
+---
+
+## 🔒 Privacy & Ethics
+
+ArogyaAI follows strict **Ethical AI principles**:
+- All analysis runs **locally or through encrypted APIs**.  
+- No identifiable user data is stored or shared externally.  
+- Designed **for education and screening**, **not** medical diagnosis.
+
+---
+
+## 🌐 Multi-Language Support
+
+All text visible to users is wrapped with `{i18n.t("...")}` for seamless translation.  
+Languages (current + planned): English 🇺🇸, Spanish 🇪🇸, Hindi 🇮🇳, Telugu 🇮🇳, French 🇫🇷.
+
+---
+
+## 🚀 Setup & Run
+
+### 1️⃣ Frontend (Expo)
+```bash
+git clone https://github.com/lalithbhima/arogyaAI.git
+cd arogyaAI
+npm install
+npx expo start
 ```
 
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
+### 2️⃣ Backend (AI Server)
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
 ```
 
-Then, and every time you update your native dependencies, run:
+---
 
-```sh
-bundle exec pod install
-```
+## 🏆 Recognition Goals
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+- 🥇 **Congressional App Challenge 2025** — AI + Healthcare Innovation  
+- 🌍 **ArogyaAI Science Society** — Nonprofit initiative for community health impact  
+- 🧬 Future integration with **ImmunoGenAI** for personalized immune-risk prediction  
 
-```sh
-# Using npm
-npm run ios
+---
 
-# OR using Yarn
-yarn ios
-```
+## 📂 Repository Highlights
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+| Folder | Description |
+|---------|-------------|
+| `/screens/` | All React Native screens (core features, modules, onboarding flow) |
+| `/utils/` | Shared helpers, hooks, and i18n configuration |
+| `/vendor/` | External or third-party component integrations |
+| `/backend/` | Python AI model files and Flask API endpoints |
+| `/types/` | TypeScript interfaces and data models |
+| `/assets/` | App icons, images, and animations (if added) |
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+---
 
-## Step 3: Modify your app
+## 📄 License
 
-Now that you have successfully run the app, let's make changes!
+MIT License © 2025 [Lalith Bhima](https://github.com/lalithbhima)
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+---
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+## 💬 Contact
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+**Email:** 
 
-## Congratulations! :tada:
+lalithendrareddy.bhima@gmail.com 
 
-You've successfully run and modified your React Native App. :partying_face:
+bhavika.bhima@gmail.com
 
-### Now what?
+**GitHub:** [@lalithbhima](https://github.com/lalithbhima)
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+---
 
-# Troubleshooting
+> _“ArogyaAI combines compassion and computation to bring accessible, ethical healthcare to everyone.”_
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
 
-# Learn More
 
-To learn more about React Native, take a look at the following resources:
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
