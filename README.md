@@ -1,6 +1,6 @@
 # 🌿 ArogyaAI — Intelligent Health Companion App
 
-ArogyaAI is a multilingual, AI-powered mobile health assistant designed to make preventive care, diagnostics, and health education accessible for everyone. Built with **React Native + Expo**, it empowers users to manage their wellness, understand symptoms, schedule reminders, and access ethical, family-centric, and global health resources — all in one app.
+ArogyaAI is a multilingual, AI-powered mobile health assistant designed to make preventive care, diagnostics, and health education accessible for everyone. Built with **React Native**, it empowers users to manage their wellness, understand symptoms, schedule reminders, and access ethical, family-centric, and global health resources — all in one app.
 
 ---
 
@@ -92,7 +92,7 @@ Each screen represents a functional module (AI chat, education, imaging, or well
 
 | Category | Technology |
 |-----------|-------------|
-| Framework | **React Native (Expo)** |
+| Framework | **React Native** |
 | Backend AI | **Python + Flask + TensorFlow/PyTorch (CNN)** |
 | Styling & UI | **Tailwind + shadcn/ui + LinearGradient + Lottie Animations** |
 | State & Navigation | **@react-navigation (stack / tabs)** |
@@ -161,8 +161,6 @@ python app.py
 ## 🏆 Recognition Goals
 
 - 🥇 **Congressional App Challenge 2025** — AI + Healthcare Innovation  
-- 🌍 **ArogyaAI Science Society** — Nonprofit initiative for community health impact  
-- 🧬 Future integration with **ImmunoGenAI** for personalized immune-risk prediction  
 
 ---
 
